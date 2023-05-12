@@ -3,7 +3,7 @@ package tech.cao.springframework.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import tech.cao.springframework.aspect.LogAspect;
+import tech.cao.springframework.aspect.LogAspect1;
 import tech.cao.springframework.dao.UserDaoImpl;
 import tech.cao.springframework.service.UserServiceImpl;
 
@@ -33,7 +33,7 @@ public class BeansConfig {
      * @return log aspect
      */
     @Bean("logAspect")
-    public LogAspect logAspect() {
-        return new LogAspect();
+    public LogAspect1 logAspect() {
+        return new LogAspect1();
     }
 }
